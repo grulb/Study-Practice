@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@mipmap/mgutu_header"/>
+
+    <TextView
+        android:id="@+id/enterHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Вход"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/enterMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:paddingHorizontal="40dp"
+        android:text="Войти"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/enterRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Нет аккаунта?"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/enterRegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:paddingHorizontal="40dp"
+        android:text="Зарегистрироваться"
+        android:textSize="15sp"/>
+
+</LinearLayout>
