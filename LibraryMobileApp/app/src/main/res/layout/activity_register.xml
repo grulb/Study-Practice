@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:src="@mipmap/mgutu_header"
-        android:scaleType=""/>
+        android:src="@mipmap/mgutu_header" />
 
     <TextView
         android:id="@+id/registerHeader"
@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:text="Регистрация"
         android:textSize="30dp"
+        android:textColor="@color/black"
         android:textAlignment="center"/>
 
     <EditText
@@ -31,6 +32,8 @@
         android:layout_gravity="center"
         android:ems="10"
         android:hint="Имя"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
         android:inputType="text"/>
 
     <EditText
@@ -41,6 +44,8 @@
         android:layout_gravity="center"
         android:ems="10"
         android:hint="Email"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
         android:inputType="textEmailAddress"/>
 
     <EditText
@@ -51,7 +56,49 @@
         android:layout_gravity="center"
         android:ems="10"
         android:hint="Пароль"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
         android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/libraryNameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Наименование библиотеки"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/libraryAddressRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Адрес библиотеки"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/libraryIDRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID библиотеки"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        android:visibility="gone"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/selectLibraryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:paddingHorizontal="40dp"
+        android:text="Выбрать библиотеку"
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/registerButton"
@@ -61,16 +108,18 @@
         android:layout_gravity="center"
         android:paddingHorizontal="40dp"
         android:text="Зарегистрироваться"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/enterRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="Уже зарегистрированы?"
         android:textSize="20dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/registerEnterButton"
@@ -80,5 +129,6 @@
         android:layout_gravity="center"
         android:paddingHorizontal="40dp"
         android:text="Войти"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
 </LinearLayout>
